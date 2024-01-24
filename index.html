@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,14 +8,14 @@
 
     <div id="lightningout"></div>
 
-    <script src="https://awesome-cloudy-267606-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
+    <script src="https://revenuegrid-be-dev-ed.develop.my.salesforce.com/lightning/lightning.out.js"></script>
     <script>
       $Lightning.use(
-        'c:TestApp', // name of the Lightning app
+        'c:LOutApplication', // name of the Lightning app
         function () {
           // Callback once framework and app loaded
           $Lightning.createComponent(
-            'c:testOutComp', // top-level component of your app
+            'c:sampleOutEmail', // top-level component of your app
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -24,10 +23,8 @@
             }
           );
         },
-          'https://awesome-cloudy-267606-dev-ed.lightning.force.com',
-          '00D09000005ORKK!ARIAQBbZuaVcS2IY109WoQJdafM9NhP6KcCYZT90SACJ7notj9RlpMeuGPDXOmB8N44D1UlpPdLOs9ayiuHPUnKvdwsKM8jy'
+        'https://revenuegrid-be-dev-ed.develop.my.salesforce-sites.com/' // Site endpoint
       );
     </script>
   </body>
-
 </html>
